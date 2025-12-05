@@ -22,20 +22,20 @@ Syntax highlighting for the Picat language in NeoVim.
 
 ```lua
 {
-  dir = "~/Projects/Picat/picat.nvim",
+  "inneralien/picat.nvim",
 }
 ```
 
 ### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use '~/Projects/Picat/picat.nvim'
+use 'inneralien/picat.nvim'
 ```
 
 ### Using [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug '~/Projects/Picat/picat.nvim'
+Plug 'inneralien/picat.nvim'
 ```
 
 ## Usage
