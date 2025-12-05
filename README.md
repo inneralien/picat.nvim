@@ -18,7 +18,37 @@ Syntax highlighting for the Picat language in NeoVim.
 
 ## Installation
 
-### Using [lazy.nvim](https://github.com/folke/lazy.nvim)
+### Using [LazyVim](https://www.lazyvim.org/)
+
+Create the file `~/.config/nvim/lua/plugins/picat.lua`:
+
+```lua
+return {
+  {
+    "inneralien/picat.nvim",
+    ft = "picat", -- lazy load on Picat filetype
+  },
+}
+```
+
+The `ft = "picat"` option ensures the plugin only loads when you open `.pi` files, keeping NeoVim startup fast.
+
+Alternatively, to always load at startup:
+
+```lua
+return {
+  {
+    "inneralien/picat.nvim",
+    lazy = false,
+  },
+}
+```
+
+After creating the file, restart NeoVim or run `:Lazy sync`.
+
+### Using [lazy.nvim](https://github.com/folke/lazy.nvim) (general)
+
+Add to your plugin configuration:
 
 ```lua
 {
